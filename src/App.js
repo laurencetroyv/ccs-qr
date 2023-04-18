@@ -1,20 +1,17 @@
-import { Suspense } from "react";
+import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 
 function App() {
+  const Home = lazy(() => import("./routes/Home"));
 
   return (
     <Suspense>
-      <div className="flex min-h-screen">
-        <h1 className="text-center mb-8 sm:text-base md:text-3xl lg:text-5xl font-bold">
-          College of Computer Studies - Student Quick Response Code
-        </h1>
-        <div className="flex grow justify-center items-center">
-          <Routes>
-            <Route path="/" element={null} />
-          </Routes>
-        </div>
+      <div className="flex flex-col min-h-screen items-center justify-center">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/IS" element={null} />
+        </Routes>
       </div>
     </Suspense>
   );
