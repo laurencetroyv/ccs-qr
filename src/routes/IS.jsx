@@ -13,7 +13,7 @@ export default function InformationSystems() {
       imageURL: Freshman,
       alt: "An image of celestial wolf",
       paragraph: "40 Students Enrolled",
-      route: "first-year",
+      route: "./IS/first-year",
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ export default function InformationSystems() {
       imageURL: Senior,
       alt: "An image of celestial wolf",
       paragraph: "38 Students Enrolled",
-      route: "second-year",
+      route: "./IS/second-year",
     },
     {
       id: 3,
@@ -29,7 +29,7 @@ export default function InformationSystems() {
       imageURL: Sophomore,
       alt: "An image of celestial wolf",
       paragraph: "18 Students Enrolled",
-      route: "third-year",
+      route: "./IS/third-year",
     },
     {
       id: 4,
@@ -37,7 +37,7 @@ export default function InformationSystems() {
       imageURL: Junior,
       alt: "An image of celestial wolf",
       paragraph: "32 Students Enrolled",
-      route: "fourth-year",
+      route: "./IS/fourth-year",
     },
   ];
 
