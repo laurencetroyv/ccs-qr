@@ -7,7 +7,7 @@ import YearComponent from "../year-component/year-component.jsx";
 export default function InformationSystems() {
   return (
     <Routes>
-      <Route index element={<YearPreview />} />
+      <Route index element={<YearPreview title={"Information Systems"} />} />
       <Route path=":year" element={<YearComponent />} />
     </Routes>
   );
