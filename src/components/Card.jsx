@@ -11,7 +11,7 @@ export default function Card({ information }) {
       <div className="card-body">
         <h2 className="card-title">{title}</h2>
         <p>{paragraph}</p>
-        <div className="card-actions justify-end">
+        <div className="card-actions justify-end animate-pulse">
           <NavLink to={`/${route}`} exact>
             <button className="btn btn-primary">View</button>
           </NavLink>
