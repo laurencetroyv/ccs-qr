@@ -1,15 +1,12 @@
 import { Suspense, lazy } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
+import Spinner from "./components/loading-animation";
 
 function App() {
   const Home = lazy(() => import("./routes/Home"));
-  const InformationSystems = lazy(() => import("./routes/IS/IS"));
-
-  const Spinner = () => (
-    <div className="w-full h-screen flex justify-center items-center">
-      <div className="inline-block w-14 h-14 border border-solid rounded-3xl border-t-pink-400 animate-spin" />
-    </div>
+  const InformationSystems = lazy(() =>
+    import("./routes/information-systems/information-systems")
   );
 
   return (
@@ -21,10 +18,10 @@ function App() {
         <div className="">
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="IS/*" element={<InformationSystems title={'Information Systems'} />} />
-            <Route path="IT/*" element={null} />
-            <Route path="CA/*" element={null} />
-            <Route path="CS/*" element={null} />
+            <Route path="is/*" element={<InformationSystems />} />
+            <Route path="it/*" element={null} />
+            <Route path="ca/*" element={null} />
+            <Route path="cs/*" element={null} />
           </Routes>
         </div>
       </div>
