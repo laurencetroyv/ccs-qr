@@ -1,10 +1,9 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
-export default function Card({ information }) {
-  const { imageURL, alt, title, paragraph, route } = information;
+export default function Card({ imageURL, alt, title, paragraph, route }) {
   return (
-    <div className="card w-96 shadow-xl image-full glass min-w-min min-h-min">
+    <div className="card card-normal w-96 shadow-xl image-full glass min-w-min min-h-min m-8">
       <figure>
         <img src={imageURL} alt={alt} />
       </figure>
