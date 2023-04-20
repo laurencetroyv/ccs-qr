@@ -2,13 +2,21 @@ import React from "react";
 
 import { Route, Routes } from "react-router-dom";
 import YearPreview from "../year-preview/year-preview.jsx";
-import YearComponent from "../year-component/year-component.jsx";
 
 export default function InformationSystems() {
+  const route = [
+    "information-systems/first-year",
+    "information-systems/second-year",
+    "information-systems/third-year",
+    "information-systems/fourth-year",
+  ];
   return (
     <Routes>
-      <Route index element={<YearPreview title={"Information Systems"} />} />
-      <Route path=":year" element={<YearComponent />} />
+      <Route
+        index
+        element={<YearPreview title={"Information Systems"} route={route} />}
+      />
+      
     </Routes>
   );
 }
