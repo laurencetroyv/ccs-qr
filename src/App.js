@@ -30,19 +30,19 @@ function App() {
             />
             <Route
               path="information-systems/first-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'IS'} year={'firstYear'} />}
             />
             <Route
               path="information-systems/second-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'IS'} year={'secondYear'} />}
             />
             <Route
               path="information-systems/third-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'IS'} year={'thirdYear'} />}
             />
             <Route
               path="information-systems/fourth-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'IS'} year={'fourthYear'} />}
             />
 
             {/* Information Technology */}
@@ -52,19 +52,19 @@ function App() {
             />
             <Route
               path="information-technology/first-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'IT'} year={'firstYear'} />}
             />
             <Route
               path="information-technology/second-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'IT'} year={'secondYear'} />}
             />
             <Route
               path="information-technology/third-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'IT'} year={'thirdYear'} />}
             />
             <Route
               path="information-technology/fourth-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'IT'} year={'fourthYear'} />}
             />
 
             {/* Computer Application */}
@@ -74,38 +74,38 @@ function App() {
             />
             <Route
               path="computer-application/first-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'CA'} year={'firstYear'} />}
             />
             <Route
               path="computer-application/second-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'CA'} year={'secondYear'} />}
             />
             <Route
               path="computer-application/third-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'CA'} year={'thirdYear'} />}
             />
             <Route
               path="computer-application/fourth-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'CA'} year={'fourthYear'} />}
             />
 
             {/* Computer Science */}
             <Route path="computer-science//*" element={<ComputerScience />} />
             <Route
               path="computer-science/first-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'CS'} year={'firstYear'} />}
             />
             <Route
               path="computer-science/second-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'CS'} year={'secondYear'} />}
             />
             <Route
               path="computer-science/third-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'CS'} year={'thirdYear'} />}
             />
             <Route
               path="computer-science/fourth-year/"
-              element={<YearComponent />}
+              element={<YearComponent course={'CS'} year={'fourthYear'} />}
             />
           </Routes>
         </div>
