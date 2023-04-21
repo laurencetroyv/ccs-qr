@@ -1,14 +1,17 @@
-import { Suspense, lazy, useContext } from "react";
+import { Suspense, useContext } from "react";
 import { Route, Routes } from "react-router-dom";
 import "./App.css";
 import Spinner from "./components/loading-animation";
 import { StudentContext } from "./utils/StudentProvider";
 import InformationSystems from "./routes/information-systems/information-systems";
 import YearComponent from "./routes/year-component/year-component";
+import Home from "./routes/Home";
+import InformationTechnology from "./routes/information-technology/information-technology";
+import ComputerApplication from "./routes/computer-application/computer-application";
+import ComputerScience from "./routes/computer-science/computer-science";
 
 function App() {
   const { fetchStudents } = useContext(StudentContext);
-  const Home = lazy(() => import("./routes/Home"));
 
   fetchStudents();
   return (
@@ -22,7 +25,7 @@ function App() {
             {/* Information Systems */}
             <Route path="/" element={<Home />} />
             <Route
-              path="information-systems/*"
+              path="information-systems//*"
               element={<InformationSystems />}
             />
             <Route
@@ -43,7 +46,10 @@ function App() {
             />
 
             {/* Information Technology */}
-            <Route path="information-technology/" element={null} />
+            <Route
+              path="information-technology//*"
+              element={<InformationTechnology />}
+            />
             <Route
               path="information-technology/first-year/"
               element={<YearComponent />}
@@ -62,7 +68,10 @@ function App() {
             />
 
             {/* Computer Application */}
-            <Route path="computer-application/" element={null} />
+            <Route
+              path="computer-application//*"
+              element={<ComputerApplication />}
+            />
             <Route
               path="computer-application/first-year/"
               element={<YearComponent />}
@@ -81,7 +90,7 @@ function App() {
             />
 
             {/* Computer Science */}
-            <Route path="computer-science/" element={null} />
+            <Route path="computer-science//*" element={<ComputerScience />} />
             <Route
               path="computer-science/first-year/"
               element={<YearComponent />}
