@@ -14,7 +14,7 @@ export default function InformationSystems() {
     <Routes>
       <Route
         index
-        element={<YearPreview title={"Information Systems"} route={route} />}
+        element={<YearPreview title={"Information Systems"} route={route} course={'BSIS'} />}
       />
       
     </Routes>
